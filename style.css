@@ -26,6 +26,9 @@ header{
     display: flex;
     justify-content: space-between;
 }
+.head-nav_first{
+    display: flex;
+}
 .head-nav_first ul{
     align-items: center;
     width: 397px;
@@ -66,3 +69,121 @@ li img {
     line-height: auto;
     color: #fff;
 }
+
+.morning{
+    background: url(img/morning_bg.jpg) center no-repeat;
+    background-size: cover;
+    padding: 224px 0 224px;
+}
+
+.morning-in{
+    display: flex;
+}
+.morning-tit{
+    font-family: "Righteous", serif;
+    width: 529px;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 130%;
+    color: #fff;
+}
+.morning-txt{
+    font-family: "Urbanist", serif;
+    width: 511px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 180%;
+    color: #fff;
+}
+
+.morning-btn{
+    margin-top: 60px;
+    width: 202px;
+    height: 70px;
+    padding: 24px 40px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: auto;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    background-color: #C99E71;
+}
+
+.morning-in{
+    width: 1170px;
+    height: 434px;
+}
+
+.morning-video-btn{
+    position: absolute;
+    top: 85%;
+    left: 77%;
+    transform: translate(-50, -50%);
+}
+.morning-video-btn h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: auto;
+    font-family: "Inter", sans-serif;
+}
+
+.morning-video-btn-img{
+    margin-bottom: 20px;
+    width: 70px;
+    height: 70px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.morning-video-btn-img::before{
+    content: '';
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 7.5px 0 7.5px 14px;
+border-color: transparent transparent transparent #ffffff;
+display: block;
+margin-left: 3px;
+}
+
+.video-overlay {
+    display: none; /* Изначально скрыто */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.video-overlay video {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+    /* .play {
+    position: absolute;
+    top: 47%;
+    left: 52%;
+    transform: translate(-50, -50%);
+} */

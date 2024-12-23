@@ -45,5 +45,53 @@
 
     </header>
 
+    <section class="morning">
+
+        <div class="container">
+            <div class="morning-in">
+                <div class="morning-content">
+                    <h2 class="morning-tit">Enjoy Your
+                        Morning Coffee.</h2>
+                    <p class="morning-txt">The coofee is brewed by fist roasting the green coffee beans over hot coals in brazier. given to Opportunity</p>
+                    <button class="morning-btn">TEST COFFEE</button>
+                </div>
+                <div class="morning-video">
+                    <a href="#" id="playVideoButton" class="morning-video-btn">
+                        <div class="morning-video-btn-img"></div>
+                        <h4 class="morning-video-btn-tit">PLAY VIDEO</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="video-overlay" id="videoOverlay">
+            <video id="videoPlayer" controls>
+                <source src="videos/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <button class="close-btn" id="closeVideo">×</button>
+        </div>
+        <script>
+            const videoOverlay = document.getElementById('videoOverlay');
+            const videoPlayer = document.getElementById('videoPlayer');
+            const playButton = document.getElementById('playVideoButton');
+            const closeButton = document.getElementById('closeVideo');
+        
+            playButton.addEventListener('click', (e) => {
+                e.preventDefault(); 
+                videoOverlay.style.display = 'flex'; 
+                videoPlayer.play(); 
+            });
+        
+            
+            closeButton.addEventListener('click', () => {
+                videoOverlay.style.display = 'none'; 
+                videoPlayer.pause(); 
+                videoPlayer.currentTime = 0;
+            });
+        </script>
+        
+
+    </section>
+
 </body>
 </html>
